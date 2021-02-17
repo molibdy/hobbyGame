@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var person_1 = require("./person");
+var persona1 = new person_1.Person('Pepa', 'Spanish', person_1.ProfessionOptions.DEVELOPER, 18);
+var persona4 = new person_1.Person('Pepa', 'Spanish', person_1.ProfessionOptions.DEVELOPER, 18);
+var persona2 = new person_1.Person('Juanito', 'Danish', person_1.ProfessionOptions.DIRECTOR, 10);
+var persona3 = new person_1.Person('Maria', 'Mexican', person_1.ProfessionOptions.MANAGER, 5);
+persona1.print();
+console.log(persona1.getExperienceYears());
+console.log(persona1.getName());
+console.log(persona1.getNationality());
+console.log(persona1.getProfession());
+console.log(persona1.isSame(persona4));
+console.log(persona1.toString());
