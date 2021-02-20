@@ -1,0 +1,132 @@
+{
+    "videogames": [
+        {
+            "title": "Spyro",
+            "releaseYear": 1998,
+            "developers": [
+                {
+                    "name": "Alex Hastings",
+                    "nationality": "American",
+                    "profession": "developer",
+                    "experienceYears": 5
+                },
+                {
+                    "name": "Mark Cerny",
+                    "nationality": "Australian",
+                    "profession": "manager",
+                    "experienceYears": 7
+                }
+            ],
+            "nationality": "American",
+            "director": {
+                "name": "Ted Price",
+                "nationality": "American",
+                "profession": "director",
+                "experienceYears": 10
+            },
+            "languages": [
+                "English",
+                "Spanish",
+                "Japanese"
+            ],
+            "platforms": [
+                {
+                    "name": "PlayStation",
+                    "releaseYear": 1994,
+                    "company": "Sony",
+                    "nBits": 32,
+                    "generation": 1,
+                    "hasHD": false,
+                    "hdSize": null,
+                    "hasInternetConnection": false,
+                    "storageDevice": "cd",
+                    "color": "gray"
+                },
+                {
+                    "name": "PlayStation 3",
+                    "releaseYear": 2006,
+                    "company": "Sony",
+                    "nBits": 64,
+                    "generation": 3,
+                    "hasHD": true,
+                    "hdSize": 1080,
+                    "hasInternetConnection": true,
+                    "storageDevice": "bluray",
+                    "color": "black"
+                },
+                {
+                    "name": "Xbox 360",
+                    "releaseYear": 2005,
+                    "company": "Microsoft",
+                    "nBits": 10000,
+                    "generation": 360,
+                    "hasHD": true,
+                    "hdSize": 1080,
+                    "hasInternetConnection": true,
+                    "storageDevice": "dvd",
+                    "color": "white"
+                }
+            ],
+            "price": 43,
+            "score": 8
+        },
+        {
+            "title": "RandomGame",
+            "releaseYear": 1998,
+            "developers": [
+                {
+                    "name": "Pepper Potts",
+                    "nationality": "Irish",
+                    "profession": "developer",
+                    "experienceYears": 6
+                },
+                {
+                    "name": "Alex Hastings",
+                    "nationality": "American",
+                    "profession": "developer",
+                    "experienceYears": 5
+                }
+            ],
+            "nationality": "Swedish",
+            "director": {
+                "name": "Ted Price",
+                "nationality": "American",
+                "profession": "director",
+                "experienceYears": 10
+            },
+            "languages": [
+                "Chinese",
+                "Russian",
+                "Italian"
+            ],
+            "platforms": [
+                {
+                    "name": "PlayStation 3",
+                    "releaseYear": 2006,
+                    "company": "Sony",
+                    "nBits": 64,
+                    "generation": 3,
+                    "hasHD": true,
+                    "hdSize": 1080,
+                    "hasInternetConnection": true,
+                    "storageDevice": "bluray",
+                    "color": "black"
+                },
+                {
+                    "name": "Xbox 360",
+                    "releaseYear": 2005,
+                    "company": "Microsoft",
+                    "nBits": 10000,
+                    "generation": 360,
+                    "hasHD": true,
+                    "hdSize": 1080,
+                    "hasInternetConnection": true,
+                    "storageDevice": "dvd",
+                    "color": "white"
+                }
+            ],
+            "price": 35,
+            "score": 4
+        }
+    ]
+}

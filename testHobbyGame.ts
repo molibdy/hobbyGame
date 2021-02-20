@@ -3,6 +3,8 @@ import {Person,ProfessionOptions} from './person';
 import { Platform,Devices } from './platform';
 import { Scores, Videogame } from './videogame';
 
+let fs= require('fs')
+
 
 let play1:Platform=new Platform('PlayStation',1994,'Sony',32,1,false,null,false,Devices.cd,'gray')
 let play3:Platform=new Platform('PlayStation 3',2006,'Sony',64,3,true,1080,true,Devices.bluray,'black')
@@ -28,3 +30,10 @@ console.log(biblioteca.gamesInLanguage('Portuguese'))
 console.log(biblioteca.priceByPlatform(play3))
 console.log(biblioteca.priceByPlatform(play1))
 console.log(biblioteca.totalPrice())
+
+
+
+//Convertir a JSON
+let hobbyGameBBDD:string=JSON.stringify(biblioteca)
+
+fs.writeFileSync('hobbyGamaBBDD.json',hobbyGameBBDD)
