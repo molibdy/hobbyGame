@@ -1,3 +1,4 @@
+import {HobbyGame} from './hobbyGame';
 import {Person,ProfessionOptions} from './person';
 import { Platform,Devices } from './platform';
 import { Scores, Videogame } from './videogame';
@@ -16,32 +17,14 @@ let videojuego2:Videogame=new Videogame('RandomGame',1998,[pepper,alex],'Swedish
     ['Chinese','Russian','Italian'],[play3,xbox],35,Scores.s4)
 
 
-console.log(videojuego.getTitle())
-console.log(videojuego.getReleaseYear())
-console.log(videojuego.getDevelopers())
-console.log(videojuego.getNationality())
-console.log(videojuego.getDirector())
-console.log(videojuego.getLanguages())
-console.log(videojuego.getPlatforms())
-console.log(videojuego.getPrice())
-console.log(videojuego.getScore())
-videojuego.inLanguage('Italian')
-videojuego.byDeveloper(pepper)
-videojuego.forPlatform(play1)
-videojuego.print()
+let biblioteca:HobbyGame= new HobbyGame([videojuego,videojuego2])
 
-videojuego.setTitle('RandomGame')
-videojuego.setReleaseYear(2009)
-videojuego.setDevelopers([pepper,alex])
-videojuego.setNationality('Swedish')
-videojuego.setDirector(ted)
-videojuego.setLanguages(['Chinese','Italian'])
-videojuego.setPlatforms([play3])
-videojuego.setPrice(35)
-videojuego.setScore(4)
-
-
-videojuego.inLanguage('Italian')
-videojuego.byDeveloper(pepper)
-videojuego.forPlatform(play1)
-console.log(videojuego.toString())
+console.log(biblioteca.getVideogames())
+console.log(biblioteca.gamesByDeveloper(pepper))
+console.log(biblioteca.gamesByDeveloper(alex))
+console.log(biblioteca.gamesForPlatAndLanguage(xbox,'Chinese'))
+console.log(biblioteca.gamesInLanguage('Spanish'))
+console.log(biblioteca.gamesInLanguage('Portuguese'))
+console.log(biblioteca.priceByPlatform(play3))
+console.log(biblioteca.priceByPlatform(play1))
+console.log(biblioteca.totalPrice())
